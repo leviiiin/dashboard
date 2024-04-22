@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "notyf": "^3.10.0",
+    "paginationjs": "^2.6.0",
     "reset-css": "^5.0.2"
   }
 }

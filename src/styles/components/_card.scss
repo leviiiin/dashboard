@@ -1,0 +1,39 @@
+.card {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-top: 50px;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+
+  border-radius: 30px;
+  background: #fff;
+
+  &__header {
+    padding: 0 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__footer {
+    margin-top: 32px;
+    padding: 0 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -1%;
+    margin-bottom: 7px;
+  }
+
+  &__description {
+    letter-spacing: -1%;
+  }
+  
+  &__table-info {
+    color: #b5b7c0;
+  }
+}

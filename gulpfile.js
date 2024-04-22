@@ -11,6 +11,8 @@ require('./tasks/scripts')();
 
 require('./tasks/icons')();
 
+require('./tasks/image')();
+
 gulp.task('watch', function () {
   browserSync.init({
     server: {
@@ -23,4 +25,4 @@ gulp.task('watch', function () {
   gulp.watch('./src/templates/**/*.pug').on('change', gulp.series('html', browserSync.reload));
 });
 
-gulp.task('default', gulp.parallel('styles', 'scripts', 'html', 'icons'));
+gulp.task('default', gulp.parallel('styles', 'scripts', 'html', 'icons', 'image'));

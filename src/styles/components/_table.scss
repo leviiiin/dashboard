@@ -1,0 +1,22 @@
+.table {
+  margin: 40px 0 30px 0;
+  width: 90%;
+  margin: 0 auto;
+
+  &__head {
+    color: #B5B7C0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  &__body {
+    
+  }
+
+  &__row {
+    
+  }
+  &__col {
+    padding: 24px 0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+}
