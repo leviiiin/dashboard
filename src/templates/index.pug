@@ -15,43 +15,43 @@ html(lang="en")
           ul.nav__list
             li.nav__item
               a(href="").nav__link
-                svg.nav__link__icon
+                svg.nav__link-icon
                   use(xlink:href=`icons/sprite.svg#dashboard`)
-                p.nav__link__title Dashboard
+                span Dashboard
             li.nav__item
               a(href="").nav__link
-                svg.nav__link__icon
+                svg.nav__link-icon
                   use(xlink:href=`icons/sprite.svg#product`)
-                p.nav__link__title Product
-                svg.nav__link__chevron
+                span Product
+                svg.nav__link-chevron
                   use(xlink:href=`icons/sprite.svg#chevron`)
             li.nav__item
-              a(href="").nav__link.active
-                svg.nav__link__icon
+              a(href="").nav__link.nav__link--active
+                svg.nav__link-icon
                   use(xlink:href=`icons/sprite.svg#customers`)
-                p.nav__link__title Customers
-                svg.nav__link__chevron
+                span Customers
+                svg.nav__link-chevron
                   use(xlink:href=`icons/sprite.svg#chevron`)
             li.nav__item
               a(href="").nav__link
-                svg.nav__link__icon
+                svg.nav__link-icon
                   use(xlink:href=`icons/sprite.svg#income`)
-                p.nav__link__title Income
-                svg.nav__link__chevron
+                span Income
+                svg.nav__link-chevron
                   use(xlink:href=`icons/sprite.svg#chevron`)
             li.nav__item
               a(href="").nav__link
-                svg.nav__link__icon
+                svg.nav__link-icon
                   use(xlink:href=`icons/sprite.svg#promote`)
-                p.nav__link__title Promote
-                svg.nav__link__chevron
+                span Promote
+                svg.nav__link-chevron
                   use(xlink:href=`icons/sprite.svg#chevron`)
             li.nav__item
               a(href="").nav__link
-                svg.nav__link__icon
+                svg.nav__link-icon
                   use(xlink:href=`icons/sprite.svg#help`)
-                p.nav__link__title Help
-                svg.nav__link__chevron
+                span Help
+                svg.nav__link-chevron
                   use(xlink:href=`icons/sprite.svg#chevron`)
         a(href="").aside__user
           .avatar
@@ -59,11 +59,9 @@ html(lang="en")
           .aside__user__info
             p.aside__user__info-name Evano
             p.aside__user__info-role Project Manager
-          svg.aside__user__chevron
-            use(xlink:href=`icons/sprite.svg#chevron`)
 
       main.main 
-        p.display Hello Evano 👋🏼,
+        p.display.display--lg Hello Evano 👋🏼,
         .card
           .card__header
             .card__info
@@ -74,47 +72,94 @@ html(lang="en")
                 svg(class="input__icon")
                   use(xlink:href=`icons/sprite.svg#search`)
                 input(type="text" class="input card__search__input" placeholder="Search")
-          table.table 
-            thead.table__head
-              tr.table__row
-                th.table__col Customer Name
-                th.table__col Company
-                th.table__col Phone Number
-                th.table__col Email
-                th.table__col Country
-                th.table__col Status
-            tbody.table__body
-              tr.table__row 
-                th.table__col Jane Cooper
-                th.table__col Microsoft
-                th.table__col (225) 555-0118
-                th.table__col jane@microsoft.com
-                th.table__col United States
-                th.table__col 
-                  button.button.button--active Active
-              tr.table__row 
-                th.table__col Floyd Miles
-                th.table__col Yahoo
-                th.table__col (205) 555-0100
-                th.table__col floyd@yahoo.com
-                th.table__col Kiribati
-                th.table__col 
-                  button.button.button--inactive Inactive
+          .table 
+            .table__head
+              .table__row
+                .table__col Customer Name
+                .table__col Company
+                .table__col Phone Number
+                .table__col Email
+                .table__col Country
+                .table__col Status
+            .table__row 
+              .table__col Jane Cooper
+              .table__col Microsoft
+              .table__col (225) 555-0118
+              .table__col jane@microsoft.com
+              .table__col United States
+              .table__col 
+                button.button.button--active Active
+            .table__row 
+              .table__col Floyd Miles
+              .table__col Yahoo
+              .table__col (205) 555-0100
+              .table__col floyd@yahoo.com
+              .table__col Kiribati
+              .table__col 
+                button.button.button--inactive Inactive
+            .table__row 
+              .table__col Jane Cooper
+              .table__col Microsoft
+              .table__col (225) 555-0118
+              .table__col jane@microsoft.com
+              .table__col United States
+              .table__col 
+                button.button.button--active Active
+            .table__row 
+              .table__col Floyd Miles
+              .table__col Yahoo
+              .table__col (205) 555-0100
+              .table__col floyd@yahoo.com
+              .table__col Kiribati
+              .table__col 
+                button.button.button--inactive Inactive
+            .table__row 
+              .table__col Jane Cooper
+              .table__col Microsoft
+              .table__col (225) 555-0118
+              .table__col jane@microsoft.com
+              .table__col United States
+              .table__col 
+                button.button.button--active Active
+            .table__row 
+              .table__col Floyd Miles
+              .table__col Yahoo
+              .table__col (205) 555-0100
+              .table__col floyd@yahoo.com
+              .table__col Kiribati
+              .table__col 
+                button.button.button--inactive Inactive
+            .table__row 
+              .table__col Floyd Miles
+              .table__col Yahoo
+              .table__col (205) 555-0100
+              .table__col floyd@yahoo.com
+              .table__col Kiribati
+              .table__col 
+                button.button.button--inactive Inactive
+            .table__row 
+              .table__col Jane Cooper
+              .table__col Microsoft
+              .table__col (225) 555-0118
+              .table__col jane@microsoft.com
+              .table__col United States
+              .table__col 
+                button.button.button--active Active
           .card__footer
-            p.card__table-info Showing data 1 to 8 of  256K entries
+            p.card__footer-info Showing data 1 to 8 of  256K entries
             nav.pagination
               button.button.pagination__button 
-                svg.pagination__button__icon
+                svg.pagination__button-icon
                   use(xlink:href=`icons/sprite.svg#left-arrow`)
               .pagination__numbers
-                button.button.pagination__button.active 1
+                button.button.pagination__button.pagination__button--active 1
                 button.button.pagination__button 2
                 button.button.pagination__button 3
                 button.button.pagination__button 4
                 p ...
                 button.button.pagination__button 40
               button.button.pagination__button
-                svg.pagination__button__icon
+                svg.pagination__button-icon
                   use(xlink:href=`icons/sprite.svg#right-arrow`)
 
 

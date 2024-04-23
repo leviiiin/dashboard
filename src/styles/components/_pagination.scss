@@ -1,32 +1,31 @@
-.pagination{
+.pagination {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 
   &__button {
-    padding: 6px 9px;
-    color: #404B52;
-    background: #F5F5F5;
-    border: 1px solid #EEEEEE;
+    padding: 3px 7px;
+    color: #404b52;
+    background: #f5f5f5;
+    border: 1px solid #eeeeee;
     border-radius: 4px;
 
     &:hover {
       border-color: var(--primary);
       color: var(--primary);
-      background: #F5F5F5;
+      background: #f5f5f5;
     }
 
-    &.active {
-      background: var(--primary);
+    &--active {
+      background-color: var(--primary);
       border-color: var(--primary);
       color: #fff;
     }
+  }
 
-    &__icon{ 
-      width: 8px;
-      height: 12px;
-      
-    }
+  &__button-icon {
+    width: 6px;
+    height: 10px;
   }
 
   &__numbers {

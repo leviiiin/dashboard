@@ -2,9 +2,11 @@
   background: #fafbff;
   width: 100%;
   height: calc(100vh - 82px);
-  padding: 41px 95px 41px 76px;
+  padding: 47px 53px 38px 72px;
 }
 
 .display{ 
-  font-size: 24px;
+  &--lg {
+    font-size: 24px;
+  }
 }

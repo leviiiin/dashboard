@@ -14,48 +14,42 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="">
-                <svg class="nav__link__icon">
+                <svg class="nav__link-icon">
                   <use xlink:href="icons/sprite.svg#dashboard"></use>
-                </svg>
-                <p class="nav__link__title">Dashboard</p></a></li>
+                </svg><span>Dashboard</span></a></li>
             <li class="nav__item"><a class="nav__link" href="">
-                <svg class="nav__link__icon">
+                <svg class="nav__link-icon">
                   <use xlink:href="icons/sprite.svg#product"></use>
-                </svg>
-                <p class="nav__link__title">Product</p>
-                <svg class="nav__link__chevron">
+                </svg><span>Product</span>
+                <svg class="nav__link-chevron">
                   <use xlink:href="icons/sprite.svg#chevron"></use>
                 </svg></a></li>
-            <li class="nav__item"><a class="nav__link active" href="">
-                <svg class="nav__link__icon">
+            <li class="nav__item"><a class="nav__link nav__link--active" href="">
+                <svg class="nav__link-icon">
                   <use xlink:href="icons/sprite.svg#customers"></use>
-                </svg>
-                <p class="nav__link__title">Customers</p>
-                <svg class="nav__link__chevron">
+                </svg><span>Customers</span>
+                <svg class="nav__link-chevron">
                   <use xlink:href="icons/sprite.svg#chevron"></use>
                 </svg></a></li>
             <li class="nav__item"><a class="nav__link" href="">
-                <svg class="nav__link__icon">
+                <svg class="nav__link-icon">
                   <use xlink:href="icons/sprite.svg#income"></use>
-                </svg>
-                <p class="nav__link__title">Income</p>
-                <svg class="nav__link__chevron">
+                </svg><span>Income</span>
+                <svg class="nav__link-chevron">
                   <use xlink:href="icons/sprite.svg#chevron"></use>
                 </svg></a></li>
             <li class="nav__item"><a class="nav__link" href="">
-                <svg class="nav__link__icon">
+                <svg class="nav__link-icon">
                   <use xlink:href="icons/sprite.svg#promote"></use>
-                </svg>
-                <p class="nav__link__title">Promote</p>
-                <svg class="nav__link__chevron">
+                </svg><span>Promote</span>
+                <svg class="nav__link-chevron">
                   <use xlink:href="icons/sprite.svg#chevron"></use>
                 </svg></a></li>
             <li class="nav__item"><a class="nav__link" href="">
-                <svg class="nav__link__icon">
+                <svg class="nav__link-icon">
                   <use xlink:href="icons/sprite.svg#help"></use>
-                </svg>
-                <p class="nav__link__title">Help</p>
-                <svg class="nav__link__chevron">
+                </svg><span>Help</span>
+                <svg class="nav__link-chevron">
                   <use xlink:href="icons/sprite.svg#chevron"></use>
                 </svg></a></li>
           </ul>
@@ -64,13 +58,10 @@
           <div class="aside__user__info">
             <p class="aside__user__info-name">Evano</p>
             <p class="aside__user__info-role">Project Manager</p>
-          </div>
-          <svg class="aside__user__chevron">
-            <use xlink:href="icons/sprite.svg#chevron"></use>
-          </svg></a>
+          </div></a>
       </aside>
       <main class="main"> 
-        <p class="display">Hello Evano 👋🏼,</p>
+        <p class="display display--lg">Hello Evano 👋🏼,</p>
         <div class="card">
           <div class="card__header">
             <div class="card__info">
@@ -86,50 +77,108 @@
               </div>
             </form>
           </div>
-          <table class="table"> 
-            <thead class="table__head">
-              <tr class="table__row">
-                <th class="table__col">Customer Name</th>
-                <th class="table__col">Company</th>
-                <th class="table__col">Phone Number</th>
-                <th class="table__col">Email</th>
-                <th class="table__col">Country</th>
-                <th class="table__col">Status</th>
-              </tr>
-            </thead>
-            <tbody class="table__body">
-              <tr class="table__row"> 
-                <th class="table__col">Jane Cooper</th>
-                <th class="table__col">Microsoft</th>
-                <th class="table__col">(225) 555-0118</th>
-                <th class="table__col">jane@microsoft.com</th>
-                <th class="table__col">United States</th>
-                <th class="table__col"> 
-                  <button class="button button--active">Active</button>
-                </th>
-              </tr>
-              <tr class="table__row"> 
-                <th class="table__col">Floyd Miles</th>
-                <th class="table__col">Yahoo</th>
-                <th class="table__col">(205) 555-0100</th>
-                <th class="table__col">floyd@yahoo.com</th>
-                <th class="table__col">Kiribati</th>
-                <th class="table__col"> 
-                  <button class="button button--inactive">Inactive</button>
-                </th>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table"> 
+            <div class="table__head">
+              <div class="table__row">
+                <div class="table__col">Customer Name</div>
+                <div class="table__col">Company</div>
+                <div class="table__col">Phone Number</div>
+                <div class="table__col">Email</div>
+                <div class="table__col">Country</div>
+                <div class="table__col">Status</div>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Jane Cooper</div>
+              <div class="table__col">Microsoft</div>
+              <div class="table__col">(225) 555-0118</div>
+              <div class="table__col">jane@microsoft.com</div>
+              <div class="table__col">United States</div>
+              <div class="table__col"> 
+                <button class="button button--active">Active</button>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Floyd Miles</div>
+              <div class="table__col">Yahoo</div>
+              <div class="table__col">(205) 555-0100</div>
+              <div class="table__col">floyd@yahoo.com</div>
+              <div class="table__col">Kiribati</div>
+              <div class="table__col"> 
+                <button class="button button--inactive">Inactive</button>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Jane Cooper</div>
+              <div class="table__col">Microsoft</div>
+              <div class="table__col">(225) 555-0118</div>
+              <div class="table__col">jane@microsoft.com</div>
+              <div class="table__col">United States</div>
+              <div class="table__col"> 
+                <button class="button button--active">Active</button>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Floyd Miles</div>
+              <div class="table__col">Yahoo</div>
+              <div class="table__col">(205) 555-0100</div>
+              <div class="table__col">floyd@yahoo.com</div>
+              <div class="table__col">Kiribati</div>
+              <div class="table__col"> 
+                <button class="button button--inactive">Inactive</button>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Jane Cooper</div>
+              <div class="table__col">Microsoft</div>
+              <div class="table__col">(225) 555-0118</div>
+              <div class="table__col">jane@microsoft.com</div>
+              <div class="table__col">United States</div>
+              <div class="table__col"> 
+                <button class="button button--active">Active</button>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Floyd Miles</div>
+              <div class="table__col">Yahoo</div>
+              <div class="table__col">(205) 555-0100</div>
+              <div class="table__col">floyd@yahoo.com</div>
+              <div class="table__col">Kiribati</div>
+              <div class="table__col"> 
+                <button class="button button--inactive">Inactive</button>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Floyd Miles</div>
+              <div class="table__col">Yahoo</div>
+              <div class="table__col">(205) 555-0100</div>
+              <div class="table__col">floyd@yahoo.com</div>
+              <div class="table__col">Kiribati</div>
+              <div class="table__col"> 
+                <button class="button button--inactive">Inactive</button>
+              </div>
+            </div>
+            <div class="table__row"> 
+              <div class="table__col">Jane Cooper</div>
+              <div class="table__col">Microsoft</div>
+              <div class="table__col">(225) 555-0118</div>
+              <div class="table__col">jane@microsoft.com</div>
+              <div class="table__col">United States</div>
+              <div class="table__col"> 
+                <button class="button button--active">Active</button>
+              </div>
+            </div>
+          </div>
           <div class="card__footer">
-            <p class="card__table-info">Showing data 1 to 8 of  256K entries</p>
+            <p class="card__footer-info">Showing data 1 to 8 of  256K entries</p>
             <nav class="pagination">
               <button class="button pagination__button"> 
-                <svg class="pagination__button__icon">
+                <svg class="pagination__button-icon">
                   <use xlink:href="icons/sprite.svg#left-arrow"></use>
                 </svg>
               </button>
               <div class="pagination__numbers">
-                <button class="button pagination__button active">1</button>
+                <button class="button pagination__button pagination__button--active">1</button>
                 <button class="button pagination__button">2</button>
                 <button class="button pagination__button">3</button>
                 <button class="button pagination__button">4</button>
@@ -137,7 +186,7 @@
                 <button class="button pagination__button">40</button>
               </div>
               <button class="button pagination__button">
-                <svg class="pagination__button__icon">
+                <svg class="pagination__button-icon">
                   <use xlink:href="icons/sprite.svg#right-arrow"></use>
                 </svg>
               </button>

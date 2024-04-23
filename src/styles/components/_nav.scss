@@ -1,47 +1,53 @@
 .nav {
-  padding-top: 53px;
-  flex: 2;
+  padding-top: 43px;
   overflow-y: auto;
-  
+  flex: 2;
+
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 17px;
   }
 
   &__link {
-    width: 250px;
+    width: 228px;
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 11px;
-    padding-right: 8px;
+    gap: 13px;
+    padding: 8px;
     border-radius: 8px;
+    margin-bottom: 9px;
+    margin-top: 9px;
     border: 3px solid transparent;
     text-decoration: none;
     color: var(--gray);
     transition: all 0.4s ease;
 
-    &:hover{
+    & > span {
+      flex: 2;
+    }
+
+    &:hover {
       border-color: var(--primary);
       color: var(--primary);
     }
 
-    &.active {
+    &--active {
       background: var(--primary);
       color: white;
+      margin-top: 10px;
+
+      &:hover {
+        border-color: var(--primary);
+        color: white;
+      }
     }
 
-    &__icon {
+    &-icon {
       width: 24px;
       height: 24px;
     }
 
-    &__title {
-      flex: 2;
-    }
-
-    &__chevron {
+    &-chevron {
       width: 16px;
       height: 16px;
     }

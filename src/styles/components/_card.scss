@@ -1,7 +1,7 @@
 .card {
-  padding-top: 30px;
+  padding-top: 36px;
   padding-bottom: 40px;
-  margin-top: 50px;
+  margin-top: 56px;
   box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
 
   border-radius: 30px;
@@ -15,7 +15,7 @@
   }
   
   &__footer {
-    margin-top: 32px;
+    margin-top: 28px;
     padding: 0 38px;
     display: flex;
     align-items: center;
@@ -25,15 +25,10 @@
   &__title {
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: -1%;
-    margin-bottom: 7px;
-  }
-
-  &__description {
-    letter-spacing: -1%;
+    margin-bottom: 16px;
   }
   
-  &__table-info {
+  &__footer-info {
     color: #b5b7c0;
   }
 }
