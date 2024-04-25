@@ -10,6 +10,11 @@
   </head>
   <body>
     <div class="container"> 
+      <div class="mobile-menu"><img class="mobile-menu__logo" src="image/logo.png" alt="logo">
+        <svg class="mobile-menu__chevron">
+          <use xlink:href="icons/sprite.svg#chevron"></use>
+        </svg>
+      </div>
       <aside class="aside"> <img class="aside__logo" src="image/logo.png" alt="logo">
         <nav class="nav">
           <ul class="nav__list">
@@ -68,12 +73,12 @@
               <h1 class="card__title">All Customers</h1>
               <p class="card__description color-green">Active Members</p>
             </div>
-            <form class="card__search">
+            <form>
               <div class="input__container">
                 <svg class="input__icon">
                   <use xlink:href="icons/sprite.svg#search"></use>
                 </svg>
-                <input class="input card__search__input" type="text" placeholder="Search">
+                <input class="input" type="text" placeholder="Search">
               </div>
             </form>
           </div>

@@ -1,0 +1,44 @@
+.mobile-menu {
+  padding: 25px;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom-right-radius: 50px;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.4s ease;
+
+  @media (max-width:1024px) {
+    display: flex;
+  }
+
+  @media (max-width:425px) {
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    justify-content: space-between;
+    border-bottom: 2px solid #eeeeee;
+  }
+
+  &__logo {
+    width: 200px;
+  }
+
+  &__chevron {
+    width: 35px;
+    height: 35px;
+  }
+
+  &--open {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &--open &__chevron {
+    transform: rotate(90deg);
+  }
+}

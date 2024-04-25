@@ -1,25 +1,38 @@
 .card {
-  padding-top: 36px;
-  padding-bottom: 40px;
-  margin-top: 56px;
+  padding: 40px 38px;
   box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
-
   border-radius: 30px;
   background: #fff;
 
+  @media (max-width:1024px) {
+    border-radius: 0;
+  }
+
   &__header {
-    padding: 0 38px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 27px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 35px;
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 30px;
+    }
   }
   
   &__footer {
-    margin-top: 28px;
-    padding: 0 38px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 35px;
+    }
   }
 
   &__title {

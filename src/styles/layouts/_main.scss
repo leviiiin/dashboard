@@ -1,11 +1,30 @@
 .main {
   background: #fafbff;
   width: 100%;
-  height: calc(100vh - 82px);
-  padding: 47px 53px 38px 72px;
+  padding: 47px 53px 47px 72px;
+
+  @media (max-width:1024px) {
+    padding: 0;
+    padding-top: 70px;
+  }
+
+  @media (max-width:575px) {
+    padding-top: 130px;
+  }
 }
 
 .display{ 
+  margin-bottom: 50px;
+
+  @media (max-width:1024px) {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  @media (max-width:575px) {
+    text-align: center;
+  }
+
   &--lg {
     font-size: 24px;
   }

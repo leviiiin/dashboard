@@ -9,6 +9,11 @@ html(lang="en")
     link(rel="stylesheet" href="css/main.css")
   body
     .container 
+      .mobile-menu
+        img(src="image/logo.png" alt="logo").mobile-menu__logo
+        svg.mobile-menu__chevron
+          use(xlink:href=`icons/sprite.svg#chevron`)
+
       aside.aside 
         img(src="image/logo.png" alt="logo").aside__logo
         nav.nav
@@ -67,11 +72,11 @@ html(lang="en")
             .card__info
               h1.card__title All Customers
               p(class="card__description color-green") Active Members
-            form.card__search
+            form
               .input__container
                 svg(class="input__icon")
                   use(xlink:href=`icons/sprite.svg#search`)
-                input(type="text" class="input card__search__input" placeholder="Search")
+                input(type="text" class="input" placeholder="Search")
           .table 
             .table__head
               .table__row
